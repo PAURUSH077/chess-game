@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chess Master JS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Chess Master JS</h2>
+
+  <div class="controls">
+    <label for="difficulty">Difficulty: </label>
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium" selected>Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+    <button onclick="resetGame()">Reset</button>
+    <button onclick="undoMove()">Undo</button>
+  </div>
+
+  <div id="chessboard"></div>
+  <p id="turn">Turn: White</p>
+
+  <!-- Add sounds -->
+  <audio id="moveSound" src="sounds/move.mp3"></audio>
+  <audio id="captureSound" src="sounds/capture.mp3"></audio>
+  <audio id="checkSound" src="sounds/check.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
